@@ -1,0 +1,20 @@
+新增辅助文件：
+link_tools.sh
+fix_code_generation.sh
+
+步骤
+一：
+make clean
+make cgen
+
+二：
+./link_tools.sh
+
+三：
+./mycoolc -o complex.s complex.cl
+
+四：
+./fix_code_generation.sh complex.s complex.cl
+
+五：
+spim -file complex.s
